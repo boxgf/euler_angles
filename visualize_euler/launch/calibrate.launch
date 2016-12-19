@@ -1,0 +1,4 @@
+<launch>
+  <node name="visualize_euler" pkg="visualize_euler" type='dynamic_reconfigurator.py' respawn="true" output="screen"/>
+  <node name="visualize_euler_rqt" pkg="rqt_gui" type="rqt_gui" args=" --perspective-file $(find visualize_euler)/rqt/visualize_euler.perspective" respawn="true" output="screen"/>
+</launch>
